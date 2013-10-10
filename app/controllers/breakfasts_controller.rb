@@ -16,11 +16,13 @@ class BreakfastsController < ApplicationController
   end
 
   def edit
-
+    @breakfast = Breakfast.find(params[:id])
+    render 'new'
   end
 
   def update
-
+    breakfast = Breakfast.find(params[:id])
+    breakfast.update_attributes(params[:breakfast])
   end
 
   def destroy
