@@ -14,7 +14,7 @@ class BreakfastsController < ApplicationController
   def create
     @breakfast = Breakfast.new(params[:breakfast])
       if @breakfast.save
-        redirect_to action: :show, id: @breakfast.id
+        redirect_to @breakfast
       else
         render 'new'
       end
