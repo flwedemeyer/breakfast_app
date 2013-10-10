@@ -22,7 +22,7 @@ class BreakfastsController < ApplicationController
   end
 
   def create
-    
+
   end
 
   def edit
@@ -37,5 +37,5 @@ class BreakfastsController < ApplicationController
 
   end
 
-  
+end
 

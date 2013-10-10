@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: breakfast_app_development
   pool: 5
-  username: davidhan
+  username: davidhanra
   password:
   host: localhost
 
@@ -46,6 +46,7 @@ test:
   pool: 5
   username: davidhan
   password:
+  host: localhost
 
 production:
   adapter: postgresql
@@ -54,3 +55,4 @@ production:
   pool: 5
   username: davidhan
   password:
+  host: localhost

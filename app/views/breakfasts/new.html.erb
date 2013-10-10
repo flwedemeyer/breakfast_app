@@ -1,2 +1,23 @@
-<h1>Breakfasts#new</h1>
-<p>Find me in app/views/breakfasts/new.html.erb</p>
+<%= form_for @breakfast do |f| %>
+  <p>
+    <%= f.label :entree %><br>
+    <%= f.text_field :entree %>
+  </p>
+  <p>
+    <%= f.label :beverage %><br>
+    <%= f.text_field :beverage %>
+  </p>
+  <p>
+    <%= f.label :day %><br>
+    <%= f.text_field :day %>
+  </p>
+  <p>
+    <%= f.label :dessert %><br>
+    <%= f.text_field :dessert %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<!-- attr_accessible :beverage, :day, :dessert, :entree -->
