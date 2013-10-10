@@ -12,13 +12,12 @@ class BreakfastsController < ApplicationController
   end
 
   def create
-    @breakfast = Breakfast.new
+    @breakfast = Breakfast.new(params[:breakfast])
       if @breakfast.save
         redirect_to action: :show, id: @breakfast.id
       else
         render 'new'
       end
-
   end
 
   def edit
