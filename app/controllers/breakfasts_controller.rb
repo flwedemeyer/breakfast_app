@@ -18,6 +18,11 @@ class BreakfastsController < ApplicationController
       else
         render 'new'
       end
+
+  end
+
+  def create
+    
   end
 
   def edit
@@ -32,6 +37,5 @@ class BreakfastsController < ApplicationController
 
   end
 
-end
-# attr_accessible :beverage, :day, :dessert, :entree
+  
 
