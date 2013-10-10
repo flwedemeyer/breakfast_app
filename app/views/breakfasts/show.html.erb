@@ -1,2 +1,9 @@
-<h1>Breakfasts#show</h1>
-<p>Find me in app/views/breakfasts/show.html.erb</p>
+<h1><%= @breakfast.day %></h1>
+
+<strong>Meal :</strong> 
+	<p><%= @breakfast.entree %><br />
+ 	<%= @breakfast.beverage %><br />
+ 	<%= @breakfast.dessert %><br />	
+</p>
+
+<%= link_to 'Back', {:action => '/'} %>

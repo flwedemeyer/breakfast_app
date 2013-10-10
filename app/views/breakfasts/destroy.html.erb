@@ -1,2 +1,6 @@
-<h1>Breakfasts#destroy</h1>
-<p>Find me in app/views/breakfasts/destroy.html.erb</p>
+<li>
+<%= link_to , {:action => 'show', :id => breakfast.id} -%>
+<b> <%= link_to 'Edit', {:action => 'edit', :id => breakfast.id} %></b>
+<b> <%= link_to "Delete", {:action => 'delete', :id => breakfast.id},
+:confirm => "Are you sure you want to forget this delicious breakfast?" %></b>
+</li>

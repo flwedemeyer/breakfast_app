@@ -1,2 +1,17 @@
-<h1>Breakfasts#index</h1>
-<p>Find me in app/views/breakfasts/index.html.erb</p>
+<h1>Yummy Breakfast</h1>
+
+<% if @breakfasts.blank? %>
+	<p>There are not any breakfasts currently in the kitchen.</p>
+<% else %>
+	<p>These are your most recent breakfast memories.</p>
+<ul id="breakfasts">
+	<% @breakfasts.each do |breakfast| %>
+		<li><%= breakfast.day %></li>
+		<li><%= breakfast.beverage %></li>
+		<li><%= breakfast.entree %></li>
+		<li><%= breakfast.dessert %></li>
+	<% end %>
+</ul>
+<% end %>
+
+<p><%= link_to "Add new Breakfast!", {:action => 'new' }%></p>
