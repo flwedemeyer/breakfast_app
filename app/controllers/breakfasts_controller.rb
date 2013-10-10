@@ -21,10 +21,6 @@ class BreakfastsController < ApplicationController
 
   end
 
-  def create
-
-  end
-
   def edit
     @breakfast = Breakfast.find(params[:id])
     render 'new'
