@@ -1,22 +1,37 @@
 class BreakfastsController < ApplicationController
   def index
-  end
 
-  def create
-  end
-
-  def update
   end
 
   def show
-  end
 
-  def destroy
   end
 
   def new
+    @breakfast = Breakfast.new
+  end
+
+  def create
+    @breakfast = Breakfast.new
+      if @breakfast.save
+        redirect_to action: :show, id: @breakfast.id
+      else
+        render 'new'
+      end
   end
 
   def edit
+
   end
+
+  def update
+
+  end
+
+  def destroy
+
+  end
+
 end
+# attr_accessible :beverage, :day, :dessert, :entree
+

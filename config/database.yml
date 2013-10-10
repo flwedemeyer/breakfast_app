@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: breakfast_app_development
   pool: 5
-  username: francescawedemeyer
+  username: davidhan
   password:
   host: localhost
 
@@ -44,7 +44,7 @@ test:
   encoding: unicode
   database: breakfast_app_test
   pool: 5
-  username: francescawedemeyer
+  username: davidhan
   password:
 
 production:
@@ -52,5 +52,5 @@ production:
   encoding: unicode
   database: breakfast_app_production
   pool: 5
-  username: francescawedemeyer
+  username: davidhan
   password:
