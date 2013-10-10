@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  beverage: MyString
+  day: MyString
+  entree: MyString
+  dessert: MyString
+
+two:
+  beverage: MyString
+  day: MyString
+  entree: MyString
+  dessert: MyString
