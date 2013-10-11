@@ -57,7 +57,7 @@ a:hover {
     text-align: center;
     content: center;
     background-color: white;
-    height: 100%;
+    overflow: scroll;
     width: 500px;
     position: absolute;
     top:0;
