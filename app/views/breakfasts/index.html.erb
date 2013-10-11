@@ -1,17 +1,27 @@
+<img src="http://hauteliving.com/wp-content/uploads/2012/03/brunch-01.jpeg" id="full-screen-background-image" />
+
+<div class="center_big"> 
+
 <h1>Yummy Breakfast</h1>
+
+
 
 <% if @breakfasts.blank? %>
 	<p>There are not any breakfasts currently in the kitchen.</p>
 <% else %>
 	<p>These are your most recent breakfast memories.</p>
+	<button class: "pure-button pure-button-primary"><%= link_to  "Add new Breakfast!", {:action => 'new' }%></button>
 <ul id="breakfasts">
 	<% @breakfasts.each do |breakfast| %>
 		<li><%= breakfast.day %></li>
 		<li><%= breakfast.beverage %></li>
 		<li><%= breakfast.entree %></li>
-		<li><%= breakfast.dessert %></li>
+		<li><%= breakfast.dessert %></li></br>
 	<% end %>
 </ul>
 <% end %>
 
-<p><%= link_to "Add new Breakfast!", {:action => 'new' }%></p>
+
+
+
+</div>
